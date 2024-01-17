@@ -1,0 +1,15 @@
+import random
+sample=[]
+for i in range(0, 10):
+    sample.append(random.randint(0,10))
+print(sample)
+
+occurance= {}
+
+for i in sample:
+    if i in occurance:
+        occurance[i] +=1
+    else:
+        occurance[i] =1
+
+print(occurance)
